@@ -21,8 +21,7 @@ public class CharacterSystem : EZS.System
         MoveLeft,
         MoveRight,
         StopMoveLeft,
-        StopMoveRight,
-        Jump
+        StopMoveRight
     }
 
     public override void InitSystem()
@@ -42,32 +41,29 @@ public class CharacterSystem : EZS.System
         if(characterComponent.HasEvent(AsInt(CharacterEvents.MoveLeft)))
         {
             characterComponent.DesiredMovementVector -= new Vector2(1, 0);
-            animatorComponent.SetBool(animatorParamaterFacingLeft, true);
-        } else if(characterComponent.HasEvent(AsInt(CharacterEvents.MoveRight)))
+        }
+        if(characterComponent.HasEvent(AsInt(CharacterEvents.MoveRight)))
         {
             characterComponent.DesiredMovementVector += new Vector2(1, 0);
+        }
+
+        if(characterComponent.HasEvent(AsInt(CharacterEvents.StopMoveLeft)))
+        {
+            characterComponent.DesiredMovementVector += new Vector2(1, 0);
+        } else if(characterComponent.HasEvent(AsInt(CharacterEvents.StopMoveRight)))
+        {
+            characterComponent.DesiredMovementVector -= new Vector2(1, 0);
+        }
+
+        if(characterComponent.DesiredMovementVector.x > 0)
+        {
             animatorComponent.SetBool(animatorParamaterFacingLeft, false);
-        }
-
-        // prevents the key release bug before the scene has loaded
-        if(characterComponent.DesiredMovementVector.x != 0)
+        } else if(characterComponent.DesiredMovementVector.x < 0)
         {
-            if(characterComponent.HasEvent(AsInt(CharacterEvents.StopMoveLeft)))
-            {
-                characterComponent.DesiredMovementVector += new Vector2(1, 0);
-            } else if(characterComponent.HasEvent(AsInt(CharacterEvents.StopMoveRight)))
-            {
-                characterComponent.DesiredMovementVector -= new Vector2(1, 0);
-            }
+            animatorComponent.SetBool(animatorParamaterFacingLeft, true);
         }
 
-        if(characterComponent.HasEvent(AsInt(CharacterEvents.Jump)) && (jumpTimer + characterComponent.JumpCooldown) <= Time.time)
-        {
-            jumpTimer = Time.time;
-            rigidbodyComponent.velocity = new Vector2(rigidbodyComponent.velocity.x, rigidbodyComponent.velocity.y + characterComponent.JumpVelocity);
-        }
-
-        // apply the velocities
-        rigidbodyComponent.velocity = new Vector2(characterComponent.DesiredMovementVector.x * characterComponent.MovementSpeed * baseMovementSpeedModifier, rigidbodyComponent.velocity.y + characterComponent.DesiredMovementVector.y);
+        // apply the velocy
+        rigidbodyComponent.velocity = new Vector2(characterComponent.DesiredMovementVector.x * characterComponent.MovementSpeed * baseMovementSpeedModifier, rigidbodyComponent.velocity.y);
     }
 }

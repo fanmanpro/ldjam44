@@ -922,7 +922,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let's make really bad life decision...
+  m_Text: Let's make really bad life decisions...
 --- !u!222 &875283666
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2011,7 +2011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920963135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.39999998, z: -10}
+  m_LocalPosition: {x: 0, y: -0.000000014901161, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1984937835}
@@ -2122,8 +2122,6 @@ MonoBehaviour:
   DesiredMovementVector: {x: 0, y: 0}
   MovementStrength: 0
   MovementSpeed: 0
-  JumpVelocity: 0
-  JumpCooldown: 1
 --- !u!70 &2094652411
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

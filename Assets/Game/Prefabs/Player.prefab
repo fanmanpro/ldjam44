@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6444812155390229114}
   - component: {fileID: 6444812155390229115}
   - component: {fileID: 6444812155390229118}
+  - component: {fileID: 339659160321779304}
+  - component: {fileID: 4481008077859728002}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -117,8 +119,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02276894, y: -0.09509385}
-  m_Size: {x: 0.25339347, y: 0.8098123}
+  m_Offset: {x: -0.018241666, y: 0.0060153008}
+  m_Size: {x: 0.17190252, y: 0.6066179}
   m_Direction: 0
 --- !u!114 &6444812155390229115
 MonoBehaviour:
@@ -135,8 +137,6 @@ MonoBehaviour:
   DesiredMovementVector: {x: 0, y: 0}
   MovementStrength: 0
   MovementSpeed: 2
-  JumpVelocity: 5
-  JumpCooldown: 1
 --- !u!95 &6444812155390229118
 Animator:
   serializedVersion: 3
@@ -156,3 +156,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &339659160321779304
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444812155390229112}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02, y: -0.4}
+  serializedVersion: 2
+  m_Radius: 0.1
+--- !u!114 &4481008077859728002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444812155390229112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec4b4e42a38a544925345a596dd350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collisions: []
+  JumpVelocity: 5
+  JumpCooldown: 0.2
