@@ -1,0 +1,1 @@
+Your life is literally inside a coin. You are battling your way against the momentum of the coin in order to reach a good financial decision. This often comes at a risk but if you are persistent enough you can tackle them and push through.
