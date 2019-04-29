@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8344781835042557827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8344781835042557826}
+  - component: {fileID: 8344781835042557884}
+  - component: {fileID: 8344781835042557886}
+  - component: {fileID: 8344781835042557887}
+  - component: {fileID: 8344781835042557885}
+  - component: {fileID: 8344781835042557881}
+  - component: {fileID: 8344781835042557880}
+  - component: {fileID: 8344781835042557883}
+  m_Layer: 0
+  m_Name: Systems (Level)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8344781835042557826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8344781835042557884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bac39ffc7bf5fc40840a0a99cc046ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 3
+  StartEventStride: 11
+--- !u!114 &8344781835042557886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e3cfe1b7282014390995d9eca046f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 5
+  StartEventStride: 11
+--- !u!114 &8344781835042557887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95cf9fa38dcaaf488deab3493854b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 4
+  StartEventStride: 11
+--- !u!114 &8344781835042557885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363924d506a076f4ba5bf9e99a2a8833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 2
+  StartEventStride: 6
+--- !u!114 &8344781835042557881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22dbc9dd04e2caf41b8101ac79607b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 6
+  StartEventStride: 11
+--- !u!114 &8344781835042557880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b021c9ae3b2872419db8f4ce0281eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 1
+  StartEventStride: 0
+--- !u!114 &8344781835042557883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344781835042557827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dca3e90a2b42b34cb4a8b3eaff7697b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SystemIndex: 0
+  StartEventStride: 0
