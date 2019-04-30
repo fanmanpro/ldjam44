@@ -7,7 +7,10 @@ public class LastSecondHackScript : MonoBehaviour
 {
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        RestartLevel();
+    }
+    public void RestartLevel()
+    {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
